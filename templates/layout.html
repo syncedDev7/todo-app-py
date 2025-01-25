@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% comment %} making the blocks which can be reused  {% endcomment %}
+    {% comment %} creating a block named title  {% endcomment %}
+    
+    <h1>
+        {% block titles %}
+        default value 
+        {% endblock  %}
+    </h1>
+    <span></span>
+    {% block content %}
+    default value is giver here
+    {% endblock  %}
+
+
+
+
+</body>
+</html>
